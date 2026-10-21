@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background: radial-gradient(circle at center, #0b071e 0%, #030208 100%);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  border: 3px solid #00f3ff;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.45), inset 0 0 20px rgba(0, 243, 255, 0.2);
+  background: #050510;
+  padding: 10px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #00f3ff;
+  text-shadow: 0 0 8px #00f3ff;
+  border-bottom: 1px solid rgba(0, 243, 255, 0.3);
+  margin-bottom: 8px;
+}
+
+#weaponLvl {
+  color: #00ff88;
+  text-shadow: 0 0 8px #00ff88;
+}
+
+#hp {
+  color: #ff007f;
+  text-shadow: 0 0 8px #ff007f;
+}
+
+#spaceCanvas {
+  display: block;
+  background: linear-gradient(180deg, #04030c 0%, #0a0720 100%);
+  border-radius: 8px;
+  cursor: crosshair;
+}
+
+.overlay {
+  position: absolute;
+  top: 52px;
+  left: 10px;
+  width: 480px;
+  height: 640px;
+  background: rgba(5, 4, 15, 0.88);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.overlay h1 {
+  font-size: 38px;
+  color: #00f3ff;
+  text-shadow: 0 0 15px #00f3ff, 3px 3px 0 #ff007f;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+#subtitle {
+  color: #ff007f;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #ff007f;
+  margin-bottom: 28px;
+}
+
+.controls {
+  background: rgba(0, 243, 255, 0.06);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #d0d8e8;
+  margin-bottom: 30px;
+}
+
+.controls b {
+  color: #00f3ff;
+}
+
+button#startBtn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #050510;
+  background: #00ff88;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ff88;
+  transition: 0.2s;
+}
+
+button#startBtn:hover {
+  background: #00f3ff;
+  box-shadow: 0 0 30px #00f3ff;
+  transform: scale(1.06);
+}

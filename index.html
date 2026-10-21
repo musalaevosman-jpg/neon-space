@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Galaxy Striker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Верхняя неоновая панель -->
+    <div class="hud">
+      <div class="hud-box">СЧЁТ: <span id="score">0</span></div>
+      <div class="hud-box">ЛАЗЕР: <span id="weaponLvl">LVL 1</span></div>
+      <div class="hud-box">ЩИТ: <span id="hp">100%</span></div>
+    </div>
+
+    <!-- Игровой экран -->
+    <canvas id="spaceCanvas" width="480" height="640"></canvas>
+
+    <!-- Меню старта / конца игры -->
+    <div id="overlay" class="overlay">
+      <h1 id="title">NEON GALAXY</h1>
+      <p id="subtitle">SPACE LASER SHOOTER</p>
+      <div class="controls">
+        <p>🚀 <b>W, A, S, D</b> / <b>Стрелки</b> / <b>Мышка</b> — Полёт</p>
+        <p>⚡ <b>ПРОБЕЛ</b> или <b>Левая кнопка мыши</b> — Лазеры</p>
+        <p>💎 Лови <b>зелёные кристаллы</b> для прокачки пушек!</p>
+      </div>
+      <button id="startBtn">В БОЙ!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
